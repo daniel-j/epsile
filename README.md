@@ -3,6 +3,10 @@ epsile - an anonymous one-to-one chat
 
 epsile got it name from epsilon, and it's an open-source clone of Omegle. It's using a node.js express+socket.io combo as server backend.
 
+Demo
+---
+http://djazz.se:8001/
+
 Installation
 ---
 When you have cloned this repository, install express and socket.io like so:
