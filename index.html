@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Epsile: Talk to strangers!</title>
+	<link rel="icon" type="image/png" href="images/epsile_logo16.png">
+	<link rel="stylesheet/less" type="text/css" href="style/epsile.less">
+	<script>
+		var less = {
+			env: "development"
+		};
+	</script>
+	<script src="js/lib/less-1.7.0.min.js"></script>
+</head>
+<body>
+
+<section id="container">
+	<section id="chatWindow">
+		<section id="chatMain">
+			<div id="chatMainDiv"></div>
+		</section>
+		
+		<div id="isTypingDiv" class="consoleChat">Stranger&nbsp;is&nbsp;typing...</div>
+		
+		<section id="panelRow">
+			
+			<input type=button value="Disconnect" id="disconnectButton" disabled>
+			<div id="chatAreaWrap">
+				<textarea id="chatArea" disabled="disabled"></textarea>
+			</div>
+		</section>
+	
+		<section id="peopleOnlineSection">
+			<span id="peopleOnlineSpan">0</span> online
+		</section>
+	</section>
+
+	<section id="welcomeScreen">
+	
+		<section id="startButtonDiv"><div>
+			<div id="description">
+				Epsile is a simple open-source clone of <a href="http://omegle.com" target="_blank">Omegle</a>, where people get connected to other people, in a one-to-one chat.<br>
+				If everyone is paired up, you must wait until someone finish a conversation. Chats are anonymous,<br>
+				meaning that the strangers you chat with don't know anything about you (unless you describe yourself).
+			</div>
+			<br>
+			<input type=button value="Start chatting!" onclick="Epsile.startChat();" class="button" id="startButton" disabled>
+		</div></section>
+		
+		<header>
+			<a href="./"><div id="logo"></div></a>
+		</header>
+		
+		<section id="badges">
+			<div>
+				<span id="sharebuttons">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-text="Epsile: An Omegle clone created with HTML5" data-via="daniel_hede" data-related="omegle" data-hashtags="epsile">Tweet</a><br>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<div class="g-plusone"></div>
+					<script type="text/javascript">
+					  (function() {
+						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						po.src = 'https://apis.google.com/js/plusone.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script>
+				</span>
+				<a href="http://nodejs.org" target="_blank"><img src="img/nodejs-love2.png" align=top vspace=6></a>
+				&nbsp;
+				<a href="http://www.w3.org/html/logo/" target="_blank"><img src="img/html5-badge-h-connectivity-css3.png"></a>
+			</div>
+		</section>
+	
+		<footer>
+			Get the <a href="server/epsile-server.js">server sourcecode</a> - uses <a href="http://socket.io/" target="_blank">socket.io</a> and <a href="http://expressjs.com/" target="_blank">express</a> - &copy; 2014
+		</footer>
+	
+	</section>
+</section>
+
+<audio id="alertSound">
+	<source src="media/alert.ogg" />
+	<source src="media/alert.mp3" />
+</audio>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/epsile.js"></script>
+</body>
+</html>

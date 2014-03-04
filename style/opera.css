@@ -1,0 +1,34 @@
+#chatWindow {
+	background-image: url('svg/chatWindow.svg');
+}
+#chatArea {
+	background-image: url('svg/chatArea.svg');
+}
+#disconnectButton {
+	background-image: url('svg/disconnectButton.svg');
+}
+#disconnectButton:active {
+	background-image: url('svg/disconnectButtonActive.svg');
+}
+#disconnectButton:disabled {
+	background-image: url('svg/disconnectButtonDisabled.svg');
+}
+
+#welcomeScreen {
+	background-image: url('svg/welcomeScreen.svg');
+}
+header {
+	background-image: url('svg/header.svg');
+}
+.button {
+	background-image: url('svg/button.svg');
+}
+.button:hover {
+	background-image: url('svg/buttonHover.svg');
+}
+.button:active {
+	background-image: url('svg/buttonActive.svg');
+}
+.button:disabled {
+	background-image: url('svg/buttonDisabled.svg');
+}
